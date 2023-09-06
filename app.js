@@ -9,6 +9,18 @@ var newRouter = require("./routes/new");
 
 var app = express();
 
+// Mongoose Setup
+
+const mongoose = require("mongoose");
+
+mongoose.connect(
+  "mongodb+srv://admin:qb40WFmbDxvBsWRo@cluster0.bazgdr9.mongodb.net/?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
