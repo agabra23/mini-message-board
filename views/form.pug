@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+    h1= title
+    <form method="POST" action="/new">
+        label(for="authorInput") Author
+        input(type="text" id="authorInput" name="authorInput")
+        label(for="messageInput") Message
+        textarea(name="messageInput" id="messageInput" cols="30" rows="10")
+        button Submit
+    </form>
+    a(href="/") Go Home
