@@ -13,7 +13,7 @@ var app = express();
 
 const mongoose = require("mongoose");
 
-await mongoose.connect(
+mongoose.connect(
   "mongodb+srv://admin:qb40WFmbDxvBsWRo@cluster0.bazgdr9.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,

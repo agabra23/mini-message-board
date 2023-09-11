@@ -6,6 +6,6 @@ const messageSchema = new mongoose.Schema({
   added: Date,
 });
 
-const Message = await mongoose.model("Message", messageSchema);
+const Message = mongoose.model("Message", messageSchema);
 
 module.exports = Message;
